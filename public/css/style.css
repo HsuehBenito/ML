@@ -4,4 +4,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+#compraCuotas{
+    text-align: center;
+}
 
+footer {
+    text-align: center;
+}
