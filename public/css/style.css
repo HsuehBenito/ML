@@ -2,6 +2,12 @@ body {
     background-color: #EAC926;
     color: #666;
     font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.btn-primary{
+    background-color: #1259c3;
+    color: white;
 }
 
 #compraCuotas{
@@ -10,4 +16,43 @@ body {
 
 footer {
     text-align: center;
+}
+
+main{
+    width: 90%;
+    text-align: center;
+}
+
+h1{
+    font-size: 24px;
+}
+
+.precios{
+    font-size: 18px;
+}
+
+.descuentos{
+    font-size: 16px;
+}
+
+.descripcionProducto{
+    font-size: 16px;
+}
+
+.fa-credit-card {
+    color: #1259c3;
+    size: 2em;
+    margin-bottom: 10px;
+}
+
+.fa-gift{
+    color: #1259c3;
+    size: 2em;
+    margin-bottom: 10px;
+}
+
+.fa-user-shield{
+    color: #1259c3;
+    size: 2em;
+    margin-bottom: 10px;
 }
