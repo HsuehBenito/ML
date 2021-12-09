@@ -10,6 +10,10 @@ app.get('/mercadoliebre', (req,res) =>{
     
     res.sendFile((__dirname + '/views/home.html'));
 });
+app.get('/crearcuenta', (req,res) =>{
+    
+    res.sendFile((__dirname + '/views/register.html'));
+});
 
 app.use(express.static(path.join(__dirname, './public')));  
 

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Crea tu cuenta | Mercado Liebre</title>
+        <meta name="viewport" content="width = device width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <form action="/registro" method="POST">
+        <label for="nombre"> Nombre y Apellido </label>
+        <input type="text" name="nombre" id="nombre"/>
+        <label for="usuario"> Usuari@ </label>
+        <input type="text" name="usuario">
+
+        <label for="fecha-nacimiento"> Fecha de Nacimiento </label>
+        <input type="date" name="fecha-nacimiento" min="1930-01-01" max="2022-01-01">
+
+        <label for="domicilio"> Domicilio </label>
+        <input type="text" name="domicilio">
+
+        <label for="perfil"> Perfil del Usuario </label>
+        <input type="checkbox" name="perfil" value="Comprador" checked> 
+        <input type="checkbox" name="perfil" value="Vendedor"> 
+
+        <label for="interes"> Categorias de interes </label>
+        <input type="checkbox" name="interes" value="Electro" checked>
+        <input type="checkbox" name="interes" value="Moda">
+        <input type="checkbox" name="interes" value="Hogar">
+        <input type="checkbox" name="interes" value="Jugueteria">
+        <input type="checkbox" name="interes" value="Vida Sana">
+        
+        <label for="foto"> Foto de Usuario </label>
+        <input type="file" name="foto" accept=".jpg" multiple>
+
+        <label for="contraseña"> Contraseña </label>
+        <input type="password" name="contraseña">
+
+        <label for="confirmar-contraseña"> Confirmar Contraseña</label>
+        <input type="password" name="confirmar-contraseña">
+
+        <button type="submit"> <a href="/views/home.html">Enviar</a> </button>
+        
+        <button type= "reset">Borrar Formulario</button> 
+                             
+        </form> 
+    </body>
+</html>
