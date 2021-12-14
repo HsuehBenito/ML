@@ -1,3 +1,7 @@
+body{
+    background-color: grey;
+    
+}
 .mainheader {
     background-color: #EAC926;
     color: #666;
@@ -6,10 +10,18 @@
     padding: 20px;
     width: 100%;
 }
-
+.mainheaderTop{
+    display: flex;
+    justify-content: space-between;
+}
 .logo{
     width: 200px;
     display: inline;
+}
+.copy-header{
+    max-width: 350px;
+    text-align: right;
+    font-size: 18px;
 }
 
 .hamburger-button{
@@ -36,6 +48,10 @@
 }
 .buscador{
     font-size: 10px;
+}
+.banner{
+    width: 100%;
+    padding-top: 20px;
 }
 
 @media (min-width: 768px)  {
@@ -148,10 +164,39 @@ h1{
 .cajaArticulo{
     background-color: white;
     border-top: solid 1px #ebebeb;
+    padding-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
+    justify-content: center;
+    box-shadow: grey;
 }
-
-
-
+.macbook{
+    align-items: center;
+}
+.macbookimg{
+    width: 100%;
+}
+.galaxys10{
+    align-items: center;
+}
+.galaxys10img{
+    width: 100%;
+}
+.cafetera{
+    align-items: center;
+}
+.cafeteraimg{
+    width: 100%;
+}
+.smarttv{
+    align-items: center;
+}
+.smarttvimg{
+    width: 100%;
+}
+.main{
+    
+    justify-content: center;
+    
+}
 
