@@ -10,6 +10,45 @@
         
     </head>
     <body>
-        
+        <form action="/registro" method="POST"> 
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <input type="text" name="nombreapellido" id="nombreapellido">
+
+            <label for="nombreusuario">Nombre de usuari@</label>
+            <input type="text" name="nombreusuario" id="nombreusuario">
+
+            <label for="fechanacimiento">Fecha de nacimiento</label>
+            <input type="date" name="fechanacimiento">
+
+            <label for="domicilio">Domicilio</label>
+            <input type="text" name="domicilio">
+
+            <label for="perfil">Perfil del usuario</label>
+            <input type="checkbox" name="perfil" value="Comprador">
+            <input type="checkbox" name="perfil" value="Vendedor">
+
+            <label for="interes">Categorías de interés</label>
+            <input type="checkbox" name="interes" value="Electro">
+            <input type="checkbox" name="interes" value="Moda">
+            <input type="checkbox" name="interes" value="Hogar">
+            <input type="checkbox" name="interes" value="Juguetería">
+            <input type="checkbox" name="interes" value="Vida sana">
+
+            <label for="foto">Foto de usuario</label>
+            <input type="file" name="foto" accept=".jpg, .png">
+
+            <label for="contraseña">Contraseña</label>
+            <input type="password" name="contraseña">
+
+            <label for="contraseña">Confirmar Contraseña</label>
+            <input type="password" name="confirmarcontraseña">
+
+            <button type="submit">Enviar</button>
+
+            <button type="reset">Borrar formulario</button>
+
+
+
+        </form>
     </body>
 </html>
