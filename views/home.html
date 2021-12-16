@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel = "stylesheet" href="/css/style.css">
-        <link rel="stylesheet" href="/css/normalize.css">
+        
         
     </head>
     <body>
@@ -19,9 +19,9 @@
                 
             
                 <img class="logo" src="/img/logo-mercado-liebre.svg">
-                <form class="buscador" action="action_page.php">
-                    <input type="text" placeholder="Buscar productos, marcas" name="search">
-                    <button class= "botoni-buscador" type="submit"><i class="fa fa-search"></i></button>
+                <form class="buscadormain" action="action_page.php">
+                    <input class="buscador" type="text" placeholder="Buscar productos, marcas" name="search">
+                    <button class= "boton-buscador" type="submit"><i class="fa fa-search"></i></button>
                 </form>
                 <h2 class= "copy-header">
                     <i class="fas fa-hand-holding-usd"></i>
@@ -53,11 +53,12 @@
             
         </header>
         <div class="banner"><img src="/img/img-home-banner.jpg" width= 100%></div>
+        <h1 class="titulomain">Basado en tu última visita</h1>
         <main class="main">
             
-            <h1>Basado en tu última visita</h1>
-                <article class="macbook">
-                    <img class="macbookimg" src="/img/img-macbook-pro-2019.jpg">
+            
+                <article class="cajaarticulomain">
+                    <img class="img" src="/img/img-macbook-pro-2019.jpg">
                     <br>
                     <div class="cajaArticulo">
                         <i class="fas fa-truck"></i>
@@ -66,8 +67,8 @@
                         <h3 class="descripcionProducto">MacBook Pro 2019</h3>
                     </div>
                 </article>
-                <article  class="galaxys10">
-                    <img class="galaxys10img" src="/img/img-samsung-galaxy-s10.jpg">
+                <article  class="cajaarticulomain">
+                    <img class="img" src="/img/img-samsung-galaxy-s10.jpg">
                     <br>
                     <div class="cajaArticulo">
                         <i class="fas fa-truck"></i>
@@ -77,10 +78,8 @@
                     </div>
                 </article>
             
-                
-            <h1>Sección de Ofertas</h1>
-                <article class="cafetera">
-                    <img class="cafeteraimg" src="/img/img-cafetera-moulinex.jpg">
+                <article class="cajaarticulomain">
+                    <img class="img" src="/img/img-cafetera-moulinex.jpg">
                     <br>
                     <div class="cajaArticulo">
                         <i class="fas fa-truck"></i>
@@ -89,8 +88,8 @@
                         <h3 class="descripcionProducto">Cafetera Moulinex</h3>
                     </div>
             </article>
-            <article class="smarttv">
-                    <img class="smarttvimg" src="/img/img-tv-samsung-smart.jpg">
+            <article class="cajaarticulomain">
+                    <img class="img" src="/img/img-tv-samsung-smart.jpg">
                     <br>
                     <div class="cajaArticulo">
                         <i class="fas fa-truck"></i>

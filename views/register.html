@@ -7,41 +7,88 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel = "stylesheet" href="/css/style.css">
         
     </head>
     <body>
-        <form action="/registro" method="POST"> 
-            <label for="nombreapellido">Nombre y Apellido</label>
-            <input type="text" name="nombreapellido" id="nombreapellido">
+        <header class="mainheader">
+            <div class="mainheaderTop">
+                
+            
+                <img class="logo" src="/img/logo-mercado-liebre.svg">
+                <form class="buscador" action="action_page.php">
+                    <input type="text" placeholder="Buscar productos, marcas" name="search">
+                    <button class= "botoni-buscador" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <h2 class= "copy-header">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    Comprá en cuotas y sin tarjeta de crédito
+                </h2>
+            </div>
 
-            <label for="nombreusuario">Nombre de usuari@</label>
-            <input type="text" name="nombreusuario" id="nombreusuario">
+            <button type="button" class="btn btn-primary hamburger-button">
+                <i class="fas fa-bars"></i>
+            </button>
 
-            <label for="fechanacimiento">Fecha de nacimiento</label>
+            <nav class="main-navbar">
+                    <ul class="navbarI">
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Tiendas Oficiales</a></li>
+                        <li><a href="#">Vender</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                    </ul>
+
+                    <ul class="navbarD">
+                        <li><a href="/crearcuenta">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                        <li><a href="#">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
+                        <li><a href="#">Mis compras<i class="fas fa-shopping-basket"></i></a></li>
+                    </ul>
+                
+                    
+                
+            </nav>
+            
+        </header>
+        <form action="/registro" method="POST" class="formulario"> 
+            
+            <input type="text" name="nombreapellido" id="nombreapellido" placeholder="Nombre y Apellido">
+
+            <input type="text" name="nombreusuario" id="nombreusuario" placeholder="Nombre de usuari@">
+
+            <input type="email" name="email" id="email" placeholder="E-mail">
+
+            <label class="tituloform" for="fechanacimiento">Fecha de nacimiento</label>
             <input type="date" name="fechanacimiento">
 
-            <label for="domicilio">Domicilio</label>
-            <input type="text" name="domicilio">
+            
 
-            <label for="perfil">Perfil del usuario</label>
-            <input type="checkbox" name="perfil" value="Comprador">
-            <input type="checkbox" name="perfil" value="Vendedor">
+            
+            <input type="text" name="domicilio" placeholder="Domicilio">
+            <label class="tituloperfil" for="perfilcheck">Perfil del usuario</label>
+        <div class="formulariorad">
+            
+            
+            <label><input type="radio" name="perfil" value="Comprador">Comprador</label>
+            <label><input type="radio" name="perfil" value="Vendedor">Vendedor</label>
+        </div>
 
-            <label for="interes">Categorías de interés</label>
-            <input type="checkbox" name="interes" value="Electro">
-            <input type="checkbox" name="interes" value="Moda">
-            <input type="checkbox" name="interes" value="Hogar">
-            <input type="checkbox" name="interes" value="Juguetería">
-            <input type="checkbox" name="interes" value="Vida sana">
+        <div class="formulariocheck">
+            <label class="tituloform" for="interes">Intereses</label>
+            <label><input type="checkbox" name="interes" value="Electro">Electro</label>
+            <label><input type="checkbox" name="interes" value="Moda">Moda</label>
+            <label><input type="checkbox" name="interes" value="Hogar">Hogar</label>
+            <label><input type="checkbox" name="interes" value="Juguetería">Juguetería</label>
+            <label><input type="checkbox" name="interes" value="Vida sana">Vida sana</label>
+        </div>
+            
+            <input type="password" name="contraseña" placeholder="Contraseña">
 
-            <label for="foto">Foto de usuario</label>
-            <input type="file" name="foto" accept=".jpg, .png">
+            <input type="password" name="confirmarcontraseña" placeholder="Confirmar Contraseña">
 
-            <label for="contraseña">Contraseña</label>
-            <input type="password" name="contraseña">
-
-            <label for="contraseña">Confirmar Contraseña</label>
-            <input type="password" name="confirmarcontraseña">
+            <label class="tituloform" for="foto">Foto de usuario</label>
+            <input type="file" name="foto" accept=".jpg, .png" >
 
             <button type="submit">Enviar</button>
 
