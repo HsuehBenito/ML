@@ -51,51 +51,44 @@
             </nav>
             
         </header>
-        <form action="/registro" method="POST" class="formulario"> 
-            
-            <input type="text" name="nombreapellido" id="nombreapellido" placeholder="Nombre y Apellido">
-
-            <input type="text" name="nombreusuario" id="nombreusuario" placeholder="Nombre de usuari@">
-
-            <input type="email" name="email" id="email" placeholder="E-mail">
-
-            <label class="tituloform" for="fechanacimiento">Fecha de nacimiento</label>
-            <input type="date" name="fechanacimiento">
-
-            
-
-            
-            <input type="text" name="domicilio" placeholder="Domicilio">
-            <label class="tituloperfil" for="perfilcheck">Perfil del usuario</label>
-        <div class="formulariorad">
-            
-            
-            <label><input type="radio" name="perfil" value="Comprador">Comprador</label>
-            <label><input type="radio" name="perfil" value="Vendedor">Vendedor</label>
-        </div>
-
-        <div class="formulariocheck">
-            <label class="tituloform" for="interes">Intereses</label>
-            <label><input type="checkbox" name="interes" value="Electro">Electro</label>
-            <label><input type="checkbox" name="interes" value="Moda">Moda</label>
-            <label><input type="checkbox" name="interes" value="Hogar">Hogar</label>
-            <label><input type="checkbox" name="interes" value="Juguetería">Juguetería</label>
-            <label><input type="checkbox" name="interes" value="Vida sana">Vida sana</label>
-        </div>
-            
-            <input type="password" name="contraseña" placeholder="Contraseña">
-
-            <input type="password" name="confirmarcontraseña" placeholder="Confirmar Contraseña">
-
-            <label class="tituloform" for="foto">Foto de usuario</label>
-            <input type="file" name="foto" accept=".jpg, .png" >
-
-            <button type="submit">Enviar</button>
-
-            <button type="reset">Borrar formulario</button>
-
-
-
-        </form>
+        <form class="formulario1">
+            <p class="creaTuCuenta">Crea tu cuenta</p>
+      <label for="Nombre" ></label>
+      <input class="cajita" type="text" id="nombre" name="Nombre" placeholder="Nombre y apellido">
+      <label for="apellido"></label>
+      <input class="cajita" type="text" id="usuario" name="usuario" placeholder="Nombre de usuario">
+      <label for="email"></label>
+      <input class="cajita" type="email" id="email" name="email" placeholder="E-mail">
+    
+        <p class="parrafito2"> Fecha de nacimiento</p>
+    
+      <input class="cajita" type="date" id="date" name="fecha">
+      <label for="password"></label>
+      <input class="cajita" type="password" id="password" name="password" placeholder="Contraseña">
+      <input class="cajita" type="password" id="password" name="password" placeholder="Confirmar contraseña">
+    <div class="divisor1"> 
+       <p class="parrafito1">Perfil de usuario</p>
+    
+      <input class="radio1" type="radio" id="comprador" name="comprador"> Comprador </input>
+      <input class="radio1" type="radio" id="vendedor" name="vendedor"> Vendedor </input>
+        
+      <p class="parrafito1">Intereses</p>
+      <div>
+      <input type="checkbox" class="intereses" name="electro">Electro</input>
+      <input type="checkbox" class="intereses" name="moda">Moda</input>
+      <input type="checkbox" class="intereses" name="hogar">Hogar</input>
+      <input type="checkbox" class="intereses" name="jugueteria">Jugueteria</input>
+      <input type="checkbox" class="intereses" name="vidaSana">Vida Sana</input>
+    </div><br>
+    <label for="Foto de usuario" class="fotoDePerfil">Foto de perfil</label>
+    <input class="botonElegir" type="file" name="Foto de usuario" accept=".jpg, .png" multiple></input>
+    
+      <!--<input class="botonreg" type="submit" value="Registrate"> -->
+    <div class="botones1">
+      <button type="submit" class="btn btn-primary btn-lg">Registrate</button>
+      <!--<input class="botonreg" type="reset">-->
+      <button type="reset" class="btn btn-primary btn-lg">Resetear</button>
+    </div>
+    </form>
     </body>
 </html>
