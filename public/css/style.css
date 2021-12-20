@@ -27,7 +27,14 @@ body{
 }
 .buscador {
     width: 100%;
+    border: none;
+    border-radius: 10px;
     
+}
+.boton-buscador{
+    border: none;
+    border-radius: 10px;
+    margin-right: 5px;
 }
 .copy-header{
     max-width: 100%;
