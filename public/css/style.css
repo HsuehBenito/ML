@@ -80,10 +80,105 @@ body{
     font-size: 16px;
    
 }
+ 
+footer {
+    background-color: white;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 20px
+    
+}
+
+footer h3 {
+    font-size: 1.5em;
+}
+
+
+
+h1{
+    font-size: 24px;
+}
+
+.precios{
+    font-size: 18px;
+}
+
+.descuentos{
+    font-size: 16px;
+    color: green;
+}
+
+
+
+.fa-credit-card {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.fa-gift{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.fa-user-shield{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+#auto {
+    color: green;
+    font-size: 15px;
+    background-color: white;
+    position: absolute;
+    right: 10px;
+    top: -15px;
+    border:1px solid  green;
+    border-radius: 100%;
+    padding:7px;
+}
+
+.cajaArticulo{
+    background-color: white;
+    border-top: solid 1px #ebebeb;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    box-sizing: content-box;
+    box-shadow: grey;
+    position: relative;
+}
+
+.macbook{
+    align-items: center;
+}
+
+.galaxys10{
+    align-items: center;
+}
+
+.cafetera{
+    align-items: center;
+}
+
+.smarttv{
+    align-items: center;
+}
+.img {
+    width: 100%;
+}
+
 @media (min-width: 0px)and (max-width: 767px){
     .descripcionProducto{
         display: none;
     } 
+    .cajaarticulomain{
+        box-shadow:0px 0px 10px rgb(100,100,100)
+    }
 }
 
 @media (min-width: 768px)  {
@@ -122,9 +217,10 @@ body{
         font-size: 16px;
     }
     .cajaarticulomain{
-        max-width: 46%;
-        box-shadow: 0px 0px 10px rgb(100,100,100);
-        
+        max-width: 46%;   
+    }
+    .cajaarticulomain{
+        box-shadow:0px 0px 10px rgb(100,100,100)
     }
 }
 
@@ -176,98 +272,27 @@ body{
         justify-content: space-between;
     }
     .descripcionProducto{
-        font-size: 16px;
+        height: -16px;
+        opacity: 0;
+    }
+    .descripcionProducto:hover  {
+        display: block;
+        opacity: 1;
+        height: 20px;
+        margin-bottom: 10px;
+        
     }
     .cajaarticulomain{
         max-width: 24%;
-        box-shadow:0px 0px 10px rgb(100,100,100);
+        box-shadow: none;
     }
-    
-    
-}
- 
-footer {
-    font-size: 12px;
-    text-align: center;
-    padding-top: 20px
-}
-
-footer h3 {
-    font-size: 1.5em;
-}
-
-
-
-h1{
-    font-size: 24px;
-}
-
-.precios{
-    font-size: 18px;
-}
-
-.descuentos{
-    font-size: 16px;
-    color: green;
-}
-
-
-
-.fa-credit-card {
-    color: #1259c3;
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.fa-gift{
-    color: #1259c3;
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.fa-user-shield{
-    color: #1259c3;
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-.fa-truck {
-    color: green;
-    font-size: 20px;
-    padding-top: 5px;
-}
-.cajaarticulomain{
-    box-shadow:0px 0px 10px rgb(100,100,100)
-}
-.cajaArticulo{
-    background-color: white;
-    border-top: solid 1px #ebebeb;
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    justify-content: center;
-    box-sizing: content-box;
-    box-shadow: grey;
-}
-
-.macbook{
-    align-items: center;
-}
-
-.galaxys10{
-    align-items: center;
-}
-
-.cafetera{
-    align-items: center;
-}
-
-.smarttv{
-    align-items: center;
-}
-.img {
-    width: 100%;
+    .cajaarticulomain:hover{
+        box-shadow:0px 0px 10px rgb(100,100,100)
+    }
+    #auto:hover {
+        transform: rotate(-90deg);
+        transition: transform 3s;;
+    }
 }
 
 
@@ -330,11 +355,46 @@ h1{
      .fotoDePerfil {
          margin: 14px 130px 11px -20px;
          font-weight: bold;
-         text-align: left;
+         text-align: center;
          font-size: 18px;
+         display: block;
      }
  
      .botonElegir {
          margin-left: 48px;
  
      }
+/* login */
+.loginformulario{
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+}
+.botonlogin{
+    margin: 60px 0px 60px 0px;
+    width: 75%;
+}
+.botonlogin:hover {
+    background-color: #0022AA;
+}
+
+.nombredeusuario{
+    border: none;
+       margin: 8px;
+       
+       border-radius: 5px;
+       text-align: left;
+       padding: 11px 0px 11px 60px;
+    width: 75%;
+}
+.contraseña{
+    border: none;
+       margin: 8px;
+       
+       border-radius: 5px;
+       text-align: left;
+       padding: 11px 0px 11px 60px;
+       width: 75%;
+}

@@ -42,7 +42,7 @@
 
                     <ul class="navbarD">
                         <li><a href="/crearcuenta">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
-                        <li><a href="#">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
+                        <li><a href="/ingresar">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
                         <li><a href="#">Mis compras<i class="fas fa-shopping-basket"></i></a></li>
                     </ul>
                 
@@ -51,7 +51,7 @@
             </nav>
             
         </header>
-        <form class="formulario1">
+        <form class="formulario1" action="/registro" method="POST">
             <p class="creaTuCuenta">Crea tu cuenta</p>
       <label for="Nombre" ></label>
       <input class="cajita" type="text" id="nombre" name="Nombre" placeholder="Nombre y apellido">
@@ -83,10 +83,10 @@
     <label for="Foto de usuario" class="fotoDePerfil">Foto de perfil</label>
     <input class="botonElegir" type="file" name="Foto de usuario" accept=".jpg, .png" multiple></input>
     
-      <!--<input class="botonreg" type="submit" value="Registrate"> -->
+      
     <div class="botones1">
       <button type="submit" class="btn btn-primary btn-lg">Registrate</button>
-      <!--<input class="botonreg" type="reset">-->
+      
       <button type="reset" class="btn btn-primary btn-lg">Resetear</button>
     </div>
     </form>
