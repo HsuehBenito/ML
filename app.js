@@ -3,7 +3,7 @@ const path = require('path');
 const app = express();
 
 app.get('', (req,res) =>{
-    res.send("Iniciado"); 
+    res.send('/mercadoliebre'); 
 });
 
 app.get('/mercadoliebre', (req,res) =>{
