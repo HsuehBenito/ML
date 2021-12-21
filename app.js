@@ -23,6 +23,6 @@ app.get('/ingresar', (req,res) =>{
 
 app.use(express.static(path.join(__dirname, './public')));  
 
-app.listen(3070, () => {
+app.listen(process.env.PORT || 3070, () => {
     console.log("Servidor ON");
 });
